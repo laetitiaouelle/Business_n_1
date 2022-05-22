@@ -1,0 +1,108 @@
+/*!
+ * NaN Business
+ * Copyright Not A Number and his devs
+ *---------------------------------------------
+ *
+ * MAIN.CSS
+ *Page chargée du style des pages
+ *
+ */
+
+  /* FONTS ********************************************* */
+ @import url('https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap');
+
+
+ /* GENERAL ********************************************* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+    font-size:16px;
+    font-family: 'Nunito Sans',arial, sans-serif;
+    color: #FFF;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: yellow;
+    z-index: 888;
+}
+
+footer{
+    text-align: center;
+    height: 100px;
+}
+
+footer p{
+    margin-bottom: 0px;
+}
+
+#centrer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+ /* SIDEBAR ********************************************* */
+
+ /*  background video code */
+ #myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #myVideo { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #myVideo {
+        width:auto;
+        height: 100%;
+    }
+    
+}
+ .sidebar{
+     height: 100vh;
+     width: 150px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background: #ebebeb;
+     z-index: -2;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+ }
+
+
+  /* MAIN CONTENT ********************************************* */
+
+  #main-content{
+      margin-left:150px;
+  }
+
+
+ /* COLORS ********************************************* */
+
+ .cl-violet{
+     color:#7362dc;
+ }
