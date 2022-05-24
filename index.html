@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,7 @@
         <!-- Stylesheet ********************************************* -->
         <link rel="stylesheet" type="text/css" media="screen" href="ressources/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="ressources/css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="ressources/css/queries.css" />
 
         <!-- favicon  ****************************************************************** -->
         <link rel="apple-touch-icon" sizes="57x57" href="ressources/images/favicons.ico/apple-icon-57x57.png">
@@ -28,71 +29,385 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="ressources/images/favicons.ico/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-        
-        
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+
+        <script src="ressources/js/jquery.min.js"></script>
+        <script>
+
+            $(window).on('load', function(){
+                $('.preloader').addClass('complete')
+            });
+            
+        </script>
 
     </head>
     <body>
-
-        <header>
-            <video autoplay muted loop id="videoBG">
-                <source src="ressources/video/video.mp4" type="video/mp4">
-              </video>
+            <div class="preloader">
+                <div class="lds-circle"><img src="ressources/images/logo-nan.png" class="img-fluid img-load"> </div>
+            </div>
+        
+            
+        <header class="v-header">
+            <div class="fullscreen-video">
+                <video src="ressources/videos/demo.mp4" autoplay muted loop="true" type="video/mp4" ></video>
+            </div>
         </header>
+        <div id="overlay"></div>
 
-        <section class="sidebar">
+        <div  id="resp-menu">
+            <a href="index.html">
+                <img src="ressources/images/logo-nan.png" class="img-fluid img-logo" alt="logo nan business">
+            </a>
+            <div class="float-right">
+                <a id="open"><ion-icon name="menu" class="hamburger in" ></ion-icon></a>
+            </div>
+            <div>
+                <ul class="main-nav" style="display:none">
+                     <ul class="main-nav" style="display:none">
+                        <li><a href="#">&nbsp;&nbsp;Accueil</a></li>
+                        <li><a href="#">&nbsp;&nbsp;Services</a></li>
+                        <li><a href="#">&nbsp;&nbsp;Pourquoi Nous ?</a></li>
+                        <li><a href="#">&nbsp;&nbsp;Contact</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
 
-        </section>
+        <section class="sidebar-lg">
+            <section class="sidebar">
 
-        <section id="main-content">
-            <div class="container-fluid">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel maximus metus. Sed venenatis, lectus finibus dignissim aliquam, erat dolor consequat est, in malesuada eros massa ut turpis. Proin sit amet facilisis justo. Vivamus non volutpat tortor, in malesuada massa. Vestibulum sit amet lobortis nibh. Praesent id porta dui, eu semper felis. Donec posuere eget diam id efficitur.
-
-                    Donec eget lobortis odio, ut egestas dui. Donec sed diam nibh. Vestibulum placerat, dui et euismod interdum, eros velit consequat risus, et malesuada ipsum neque ac tortor. Nullam eu nulla maximus massa vestibulum egestas ullamcorper sit amet justo. Ut pellentesque cursus feugiat. Phasellus id est eget orci efficitur placerat ac eget metus. Mauris pretium iaculis nibh, dignissim rutrum ante. Nulla malesuada tellus vitae facilisis venenatis. Donec volutpat rhoncus gravida. In vitae arcu non turpis dignissim posuere. Curabitur at convallis libero. Curabitur posuere, enim non pulvinar feugiat, metus diam bibendum nibh, id volutpat dolor turpis vel nisi.
-                    
-                    Donec euismod, massa vitae porta laoreet, nisi diam sollicitudin elit, id mattis risus quam ut ante. Duis lobortis metus in dolor luctus molestie. Nullam vitae vehicula neque, nec porta ipsum. Sed et urna sit amet augue aliquam ultrices at in neque. Sed in convallis libero. Ut venenatis imperdiet urna, a aliquam felis facilisis et. Integer interdum nulla nec iaculis volutpat. Curabitur tincidunt, enim ut mollis lobortis, neque lorem dapibus nisi, a finibus orci felis quis risus. Vivamus sit amet tristique erat. Vestibulum efficitur mauris non rhoncus ultrices. Phasellus vel feugiat nisi. Mauris at tortor placerat, commodo magna porttitor, laoreet elit.
-                    
-                    Maecenas lobortis cursus libero eu maximus. In et congue elit. Phasellus iaculis, lacus eu sagittis venenatis, urna augue pulvinar ante, ut lacinia augue mauris vel massa. Aliquam id aliquet dolor. Etiam bibendum lectus mi, in tristique nisi iaculis in. Cras eget egestas massa. Aliquam hendrerit massa ut efficitur eleifend. Fusce nisl neque, varius eget magna a, luctus congue risus. Sed finibus est ut ante iaculis consequat. Proin molestie tortor at tortor cursus sodales. Vivamus luctus lacus a metus iaculis sagittis. Nullam viverra leo enim, sed auctor nisl auctor eu.
-                    
-                    Sed elementum dictum tellus a cursus. Vestibulum tempus enim condimentum sagittis porttitor. Curabitur malesuada, ipsum eleifend vulputate iaculis, leo risus pulvinar nulla, at euismod velit nulla a nisl. Vivamus ultrices egestas convallis. Nullam molestie enim in quam pharetra pharetra. Sed magna lorem, feugiat quis volutpat vel, suscipit eget diam. Curabitur elementum quam at lacus ultrices molestie. In commodo magna est, in porttitor lorem commodo eget. Duis nec maximus nulla. Nullam semper sit amet felis vitae vestibulum.
-                    
-                    Nulla interdum facilisis tincidunt. Aenean id luctus ante, ut vehicula enim. Pellentesque id enim ac metus volutpat blandit. Pellentesque dictum, diam at viverra commodo, purus erat suscipit quam, at rhoncus nunc lorem vel elit. Nunc volutpat est non orci facilisis cursus. Nullam suscipit tristique erat vitae laoreet. Quisque purus odio, hendrerit eu ligula vitae, pulvinar mattis leo.
-                    
-                    Quisque accumsan porttitor accumsan. Aenean ut dolor ac enim suscipit fringilla. Nam tincidunt nulla risus, ut auctor sem aliquet ac. Aliquam erat volutpat. Donec vitae bibendum diam. Nullam viverra nulla id urna varius mollis. Morbi tincidunt ante in urna posuere laoreet. Sed quam lorem, condimentum vel nisl commodo, aliquet tempor turpis. Praesent tortor sem, bibendum at ultrices in, condimentum a magna. Vestibulum at mattis purus. Duis rutrum vulputate velit. In finibus accumsan orci, non rhoncus magna semper ut.
-                    
-                    Sed massa mauris, tristique in est id, efficitur venenatis ante. Praesent bibendum mi nulla, id porta augue dictum eu. Mauris pretium ante quis vestibulum sodales. Etiam pretium posuere posuere. Morbi sapien urna, luctus in ullamcorper sed, vulputate non nibh. Aenean scelerisque sem erat, vel suscipit nisi accumsan in. Mauris euismod viverra neque non pretium. Fusce molestie tellus vel leo scelerisque fermentum. Curabitur sem dolor, maximus vel metus fringilla, suscipit condimentum risus. Nulla lobortis vel augue at sagittis. Fusce dapibus rutrum turpis sit amet malesuada. Morbi ultrices, metus non cursus condimentum, tellus dui consequat nulla, eget molestie nunc diam quis enim. Aliquam velit velit, sollicitudin in diam at, scelerisque rutrum enim. Vestibulum at mauris eget nulla accumsan volutpat.
-                    
-                    Nam ut arcu tellus. Maecenas sit amet ullamcorper justo, in iaculis ipsum. Donec at velit felis. Fusce lorem lorem, malesuada nec nisl sed, facilisis feugiat quam. Donec ultrices augue sit amet ligula dapibus, nec rutrum ipsum lacinia. Phasellus pellentesque non metus in fringilla. Ut ultricies leo vitae enim luctus, nec faucibus diam tincidunt.
-                    
-                    Pellentesque ac nulla quis est posuere laoreet. Fusce aliquet dui sem, sit amet finibus mauris pharetra nec. Maecenas at ornare risus, sed pretium augue. Donec auctor arcu sit amet ipsum aliquet molestie. Vestibulum ac metus sit amet odio dignissim laoreet. Curabitur malesuada metus vitae elit hendrerit efficitur. Nulla blandit rutrum viverra. Maecenas massa massa, convallis in tempus eu, malesuada nec tellus. Phasellus non nibh id elit malesuada feugiat eget et risus. Donec tincidunt ut elit vel faucibus. Donec viverra interdum nibh id porttitor. Pellentesque in quam augue. Ut dolor ligula, fermentum vitae arcu sed, aliquet accumsan nisl. Nulla lobortis diam felis, a iaculis tortor aliquam sed. Fusce eget dolor nulla. Nullam mattis ipsum a luctus maximus.
-                    
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lobortis orci sed varius facilisis. Nunc sagittis dui nec fringilla pellentesque. Fusce vitae vulputate sem, quis vulputate dui. Maecenas a leo nec lorem pretium viverra eu sed justo. Vivamus et velit a sem hendrerit congue eget dapibus sapien. Suspendisse eu felis nec justo ullamcorper lobortis sed vel arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    
-                    Maecenas faucibus finibus arcu, nec consectetur arcu pellentesque id. In rhoncus augue eu augue molestie varius. Mauris malesuada posuere sem, quis suscipit velit tincidunt in. Ut sit amet venenatis mauris. Morbi vulputate varius risus, id vehicula magna malesuada at. Ut urna elit, eleifend id feugiat cursus, rhoncus eu nibh. Sed tristique imperdiet tortor, id accumsan dolor bibendum vitae. Vivamus ut massa vitae dui tempus tincidunt et sed diam. Duis non eros fermentum, lacinia eros quis, efficitur ante. Aliquam viverra sem ac orci pretium vehicula. Vestibulum faucibus mauris tortor, at tempor sapien tempor in.
-                    
-                    Fusce blandit, nulla a pulvinar faucibus, dolor libero cursus ex, quis gravida lorem orci eget diam. Donec in dapibus arcu. Etiam id vestibulum neque. Donec blandit, justo eu pulvinar hendrerit, tellus metus aliquet metus, sit amet rutrum nisl massa vel enim. Nullam quis tortor augue. Nunc facilisis massa dolor, vel porttitor felis porttitor ac. Nunc non maximus risus.
-                    
-                    Pellentesque congue neque lacinia, euismod enim et, aliquet quam. Etiam tortor augue, ultrices in quam non, iaculis venenatis dui. Sed sit amet ultricies lacus. Nam rhoncus ligula in sem laoreet faucibus. Morbi imperdiet neque mi, et feugiat libero mollis nec. Aliquam at orci ut est molestie vulputate. Suspendisse tristique, urna et placerat cursus, elit tortor placerat nisl, viverra cursus quam dolor venenatis lorem. Proin eu accumsan ligula. Mauris et feugiat metus. Cras commodo ut orci sit amet scelerisque. Praesent faucibus posuere maximus. Donec vel maximus dolor. Donec fermentum dapibus sagittis. Morbi in erat elementum dui consectetur consequat id eget est. Nulla sagittis magna et ex aliquet, nec interdum ex vestibulum.
-                    
-                    Ut non gravida urna. Nam commodo arcu sed eleifend gravida. Pellentesque laoreet odio ut enim pellentesque, sit amet facilisis magna luctus. Nullam sit amet iaculis lectus, eget faucibus leo. Fusce scelerisque commodo efficitur. Sed rhoncus mollis pellentesque. Maecenas ac ultricies elit. Sed dictum purus ac odio dapibus, sed tincidunt lorem placerat. Nam tempus ante eget diam interdum, et tempor risus ultricies.
-                    
-                    Aenean leo ex, venenatis consequat dictum vel, sagittis nec velit. Sed sollicitudin vitae ex in feugiat. Integer molestie mauris libero, id vestibulum eros iaculis dignissim. Aliquam augue eros, rhoncus ut luctus nec, viverra at lectus. Duis auctor libero vitae odio porta, ac sagittis odio pulvinar. Pellentesque semper nisl sed turpis ullamcorper bibendum. Phasellus lobortis, augue in laoreet mattis, dui nulla maximus tortor, at tempor diam nisl efficitur enim. In interdum venenatis tortor. Integer vehicula pretium nulla eget mollis. Duis sit amet lorem tortor.
-                    
-                    Mauris quis imperdiet ipsum. Aliquam et tortor sapien. Etiam vulputate libero venenatis ante consectetur, sed interdum orci mattis. Cras venenatis, sapien nec pharetra gravida, mauris lectus mattis tellus, at rhoncus tortor metus hendrerit sapien. Maecenas eleifend sapien sed enim feugiat ornare. Cras elit mi, tincidunt id leo ac, porta pellentesque felis. Sed vehicula, magna quis ullamcorper rutrum, nisl arcu vestibulum nunc, vel venenatis lorem metus eget ante. Sed tempus consequat mi. Aenean sit amet mollis lectus, in lobortis quam.
-                    
-                    Donec luctus bibendum rhoncus. Nulla tempus ipsum sed aliquam maximus. Etiam neque nulla, dignissim non ultricies pretium, suscipit at lacus. Integer tincidunt urna non lacinia volutpat. Phasellus imperdiet id orci sed pretium. Suspendisse mollis ullamcorper leo, vitae porta enim placerat gravida. Vivamus eu lacus nulla. Cras hendrerit ornare neque nec lobortis. Morbi semper dolor malesuada, ultricies odio quis, sodales augue. Praesent sed cursus metus. Pellentesque vitae risus leo. Etiam in tristique sem, non vulputate eros. Fusce ut sapien nec augue iaculis posuere. Ut nunc purus, sollicitudin eget augue at, pretium tempus quam.
-                    
-                    Sed in maximus nunc. Nunc aliquam erat vel nibh consectetur, nec luctus sapien porttitor. Nunc aliquam urna in leo blandit hendrerit. Nulla facilisi. In purus justo, malesuada sit amet venenatis ac, dapibus quis est. Proin arcu ex, finibus id metus sed, sagittis porttitor ex. Vivamus ultricies consequat arcu a ultrices. Sed sit amet tincidunt est, eget accumsan purus. In sagittis, ante nec accumsan cursus, tortor magna tempus nibh, vitae elementum erat purus eget ligula. Pellentesque hendrerit porttitor porttitor. Nam faucibus ornare sem quis congue. Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin ligula felis, mattis non purus ac, ultrices facilisis nibh. Donec feugiat enim est, vulputate imperdiet nibh auctor in. Donec placerat sodales urna vitae sagittis.
-                    
-                    Sed ac sollicitudin ipsum. Phasellus in sodales mauris. Cras sodales bibendum quam pellentesque elementum. Aliquam at odio auctor, facilisis est quis, condimentum mi. Donec hendrerit arcu ipsum, ut fringilla sem rhoncus ac. Maecenas faucibus, lectus et faucibus consequat, elit tortor euismod neque, sit amet sagittis lacus tortor eget magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus accumsan venenatis. Quisque imperdiet faucibus erat ac semper. Vestibulum vulputate suscipit suscipit. Morbi sit amet egestas tellus. Donec placerat ornare lectus sit amet rhoncus. Nunc euismod magna nec feugiat porta. In aliquet magna quis dui pulvinar, vitae elementum ex dictum. Nulla facilisi. Nam gravida tempor lectus facilisis ultricies.
+            <div id="centrer" style="height:100vh">
+                <ul class="menu text-center">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pourquoi Nous</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <span class="divider-point-vt">&bull;&bull;&bull;</span>
+                    <li>
+                        <a href="index.html">
+                                <center>
+                                    <img src="ressources/images/logo-nan.png" class="img-fluid img-logo" alt="logo nan business">
+                                </center>
+                            </a>
+                        </li>
+                </ul>
             </div>
 
-            <footer id="centrer">
-                <p>&copy; NaN Business - Not A Number</p>
-            </footer>
+            <div class="sidebar-social" id="centrer"> 
+                <ul class="azerty">
+                    <li>
+                        <ul class="qwerty">
+                                <li>&nbsp;<a href="#"><ion-icon name="logo-facebook" id="fb"></ion-icon></a></li>
+                                <li>&nbsp;<a href="#"><ion-icon name="logo-twitter" id="tw"></ion-icon></a></li>
+                                <li>&nbsp;<a href="#"><ion-icon name="logo-instagram" id="insta"></ion-icon></a></li>
+                                <li>&nbsp;<a href="#"><ion-icon name="logo-youtube" id="yt"></ion-icon></a>&nbsp;</li>
+                            </ul>
+                    </li>
+                    <li class="text-center"><small>© NaN Business 2019</small></li>
+                </ul>
+            </div>
+            </section>
         </section>
-        <script src="ressources/js/jquery.min.js"></script>
+        
+        <section id="main-content">
+            <!-- Block 1 -->
+            <div id="block1">
+                <div class="container-fluid">
+                    <a href="#patner" class="down">
+                        <div class="invite_scroll" id="centrer">
+                            <div class="text-center">
+                                <p>Continuer</p>
+                                <p><ion-icon name="arrow-round-down"></ion-icon></p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <div id="patner" class="pd-top-50 pd-bt-50">
+                        <center>
+                        <ul>
+                            <li class="pd-bt-20">
+                                <img src="ressources/images/client.png" class="img-fluid img-client" alt="logo"><br>
+                                <p class="avis">" Completement satisfait "</p>
+                                <img src="https://assets.website-files.com/59a869620d1b7c0001e68012/5c9c5bebcaf3b6227333e6e5_cbre.svg" class="img-fluid" alt="logo">
+                            </li>
+                            <li class="pd-bt-20">
+                                <img src="ressources/images/client.png" class="img-fluid img-client" alt="logo"><br>
+                                <p class="avis">" Completement satisfait "</p>
+                                <img src="https://assets.website-files.com/59a869620d1b7c0001e68012/5c9c5e1dd88d007ec1f05844_epiq.svg" class="img-fluid" alt="logo">
+                            </li>
+                            <li class="pd-bt-20">
+                                <img src="ressources/images/client.png" class="img-fluid img-client" alt="logo"><br>
+                                <p class="avis">" Completement satisfait "</p>
+                                <img src="https://assets.website-files.com/59a869620d1b7c0001e68012/5c9c5bebcaf3b6227333e6e5_cbre.svg" class="img-fluid" alt="logo">
+                            </li>
+                            <li class="pd-bt-20">
+                                <img src="ressources/images/client.png" class="img-fluid img-client" alt="logo"><br>
+                                <p class="avis">" Completement satisfait "</p>
+                                <img src="https://assets.website-files.com/59a869620d1b7c0001e68012/5c9c5e1dd88d007ec1f05844_epiq.svg" class="img-fluid" alt="logo">
+                            </li>
+                            <li class="pd-bt-20">
+                                <img src="ressources/images/client.png" class="img-fluid img-client" alt="logo"><br>
+                                <p class="avis">" Completement satisfait "</p>
+                                <img src="https://assets.website-files.com/59a869620d1b7c0001e68012/5c9c5bebcaf3b6227333e6e5_cbre.svg" class="img-fluid" alt="logo">
+                            </li>
+                            <li class="pd-bt-20">
+                                <img src="ressources/images/client.png" class="img-fluid img-client" alt="logo"><br>
+                                <p class="avis">" Completement satisfait "</p>
+                                <img src="https://assets.website-files.com/59a869620d1b7c0001e68012/5c9c5e1dd88d007ec1f05844_epiq.svg" class="img-fluid" alt="logo">
+                            </li>
+                        </ul>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Block 2 -->
+            <div id="block2">
+                <div class="container">
+                    <div class="row pd-top-50 pd-bt-50">
+                        <div class="col-12">
+                            <h2 class="welcome">Bienvenue !</h2>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pd-top-20">
+                            <p class="welcom-message">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ullamcorper metus a lacus rhoncus auctor.
+                                Pellentesque rhoncus odio sit amet elit finibus imperdiet. Suspendisse nec auctor odio. Quisque rhoncus facilisis augue facilisis volutpat. Nunc porta rhoncus lacus, ut facilisis tellus euismod vel. Nullam egestas tellus vitae tortor maximus, sed efficitur nibh aliquet. Sed scelerisque vitae nulla varius gravida. 
+                                Morbi auctor ante ac dignissim tempor. Mauris commodo ac tortor sit amet varius. 
+                            </p>
+                            <div>
+                                <div class="right-bordure"></div>
+                                <img src="ressources/images/lion.jpg" class="img-fluid" alt="">
+                                <div class="left-bordure"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-0 col-md-1 col-lg-1"></div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                            <ul class="welcom-list pd-top-50">
+                                <li>
+                                    <ion-icon name="heart" class="cl-violet"></ion-icon>
+                                    <h4 class="cl-violet family">Amour du travail bien fait</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Aperiam odit modi harum architecto, cupiditate hic obcaecati.
+                                    </p>
+                                </li>
+                                <li>
+                                    <ion-icon name="text" class="cl-violet"></ion-icon>
+                                    <h4 class="cl-violet family">Écoute du client</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Aperiam odit modi harum architecto, cupiditate hic obcaecati.
+                                    </p>
+                                </li>
+                                <li>
+                                    <ion-icon name="stopwatch" class="cl-violet"></ion-icon>
+                                    <h4 class="cl-violet family">Rapidité d'execution</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Aperiam odit modi harum architecto, cupiditate hic obcaecati.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Block 3 -->
+            <div id="block3">
+                <div class="container" >
+                    <div class=" row pd-top-50 pd-bt-50">
+                        <div class="col-md-12 text-center pd-bt-20">
+                            <h4 class="family">Services</h4>
+                            <span class="divider-point">&bull;&bull;&bull;</span>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card mg-bt-30 card-tricks" >
+                                <div class="mycard" id="centrer">
+                                    <img src="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/ads/hotjar/hotjar-600x600.png" class="img-fluid img-card">
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 cl-violet sz-11">Développement mobile web</h6>
+                                    <p class="card-text cl-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="card-link" style="color:#28a745">En savoir plus</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card mg-bt-30 card-tricks">
+                                <div class="mycard" id="centrer">
+                                    <img src="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/ads/hotjar/hotjar-600x600.png" class="img-fluid img-card">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-subtitle mb-2 cl-violet sz-11">Card subtitle</h5>
+                                    <p class="card-text cl-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="card-link" style="color:#28a745">En savoir plus</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card mg-bt-30 card-tricks">
+                                <div class="mycard" id="centrer">
+                                    <img src="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/ads/hotjar/hotjar-600x600.png" class="img-fluid img-card">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-subtitle mb-2 cl-violet sz-11">Card subtitle</h5>
+                                    <p class="card-text cl-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="card-link" style="color:#28a745">En savoir plus</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card mg-bt-30 card-tricks">
+                                <div class="mycard" id="centrer">
+                                    <img src="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/ads/hotjar/hotjar-600x600.png" class="img-fluid img-card">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-subtitle mb-2 cl-violet sz-11">Card subtitle</h5>
+                                    <p class="card-text cl-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="card-link" style="color:#28a745">En savoir plus</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card mg-bt-30 card-tricks">
+                                <div class="mycard" id="centrer">
+                                    <img src="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/ads/hotjar/hotjar-600x600.png" class="img-fluid img-card">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-subtitle mb-2 cl-violet sz-11">Card subtitle</h5>
+                                    <p class="card-text cl-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="card-link" style="color:#28a745">En savoir plus</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4">
+                            <div class="card card-tricks mg-bt-30">
+                                <div class="mycard" id="centrer">
+                                    <img src="https://css-tricks.com/wp-content/themes/CSS-Tricks-17/ads/hotjar/hotjar-600x600.png" class="img-fluid img-card">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-subtitle mb-2 cl-violet sz-11">Card subtitle</h5>
+                                    <p class="card-text cl-black">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <!-- <a href="#" class="card-link" style="color:#28a745">En savoir plus</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-12 col-lg-12 text-center">
+                            <a href="#">
+                                <button class="my-button raise">TOUT CONSULTER</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Block 4 -->
+            <div id="block4">
+                <div class="container">
+                    <div class="row pd-top-50 pd-bt-50 text-center">
+                        <div class="col-xs-0 col-sm-1 col-md-1 col-lg-2"></div>
+                        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-8">
+                            <h1  class="pd-bt-50">Vous avez besoins d'un services informatique?</h1>
+                            <p class="welcom-message">
+                                Nan Business est la compagny parfaite pour transformer vos idées en solution web finaleSome quick example text to build on the card title and make up the bulk of the card's content.
+                                ome quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                        <div class="col-xs-0 col-sm-1 col-md-1 col-lg-2"></div>
+                        <div class="col-md-12 col-lg-12 text-center pd-bt-50">
+                            <a href="#">
+                                <button class="my-button raise">LOREM IPSUM</button>
+                            </a>
+                        </div>
+                    </div>        
+                </div>
+            </div>   
+            
+            <!-- Block 5 -->
+            <div id="block5">
+                <div class="container ">
+                    <div class="row pd-top-150 pd-bt-50" style="background:linear-gradient(#000,#0000,#0000,#0000)">
+                        <div class="col-md-6 ">
+                            <div class="card mb-4 card-height" >
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6 pd-top-50">
+                            <div class="card mb-4 card-height" >
+                                
+                            </div>
+                        </div> 
+                        <div class="col-md-6 ">
+                            <div class="card mb-4 card-height" >
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-6 pd-top-50">
+                            <div class="card mb-4 card-height" >
+                                
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div id="block_contact">
+                <div class="container text-center contact-hs" id="centrer">
+                    <div>
+                        <h1 class="welcome">Lorem ipsum dagegen</h1>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <p class="sz-11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate hic sapiente in, delectus ad non molestiae totam quasi nisi aspernatur. Excepturi cumque laudantium recusandae libero sed, cupiditate saepe accusantium?</p>
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-12 col-lg-12 text-center ">
+                                <a href="pages/contact.html">
+                                    <button class="my-second-button ">PARLONS EN</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+             <!-- Block 6 -->
+            <div id="block6">
+                <div class="block6_content">
+                    <div>
+                        <div class=" pd-top-50 text-center">
+                                <ul class="menu">
+                                        <li>Angré 8ième tranche, Abidjan - Côte d'Ivoire </li>
+                                        <li>T. (225) 12 123 123 / (225) 12 123 123</li>
+                                        <li>E. business@nan.ci</li>
+                                    </ul>
+                            <div class="" >
+                                <ul id="social-network">
+                                    <li><a href="#" class="social_link bg-insta" id="centrer"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                    <li><a href="#" class="social_link bg-tweet" id="centrer"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                                    <li><a href="#" class="social_link bg-fb" id="centrer"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                    <li><a href="#" class="social_link bg-yt" id="centrer"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                                </ul>
+                            </div>
+                            <footer  class="family footer-page">
+                                <p>&nbsp; &copy; NaN Business - Made with <ion-icon name="heart"></ion-icon> by NaN devs</p>
+                            </footer>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </section>
+
+
+        
+        
         <script src="ressources/js/bootstrap.min.js"></script>
+        <script src="ressources/js/main.js"></script>
+
     </body>
 </html>

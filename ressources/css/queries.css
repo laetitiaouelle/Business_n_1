@@ -1,9 +1,120 @@
 /*!
  * NaN Business
  * Copyright Not A Number and his devs
+
+                      .
+                     d8b
+                   d88888b
+                 d888Y Y888b
+               d888Y  .  Y888b
+             d888Y   d8b   Y888b
+           d888Y   d88888b   Y888b
+            ""   d888Y Y888b   ""
+               d888Y  .  Y888b
+                ""   d8b   ""
+                   d88888b
+   8888b   88888     Y8b     8888b   88888
+    8888b   888       '       8888b   888
+    88888b  888               88888b  888
+    888Y88b 888    88888b.    888Y88b 888
+    888 Y88b888    "   "88b   888 Y88b888
+    888  Y88888   .d8888888   888  Y88888
+    888   Y8888   888   888   888   Y8888
+   88888   Y888   "Y88888"88 88888   Y888 
  *---------------------------------------------
  *
  * QUERIES.CSS
  *Page chargée de la responsivité des pages
  *
  */
+
+ @media (max-width: 1025px){
+    #patner ul li{
+        width: calc(100% / 4);
+        text-align: center;
+    }
+
+    .sidebar-lg,
+    .sidebar{
+        display: none;
+    }
+
+    #main-content{
+        margin-left: 0px;
+    }
+
+    .welcom-message {
+        font-size: 16px;
+    }
+
+    .avis {
+        font-family: 'Caveat',serif;
+        font-size: 17px;
+    }
+
+    .card-tricks{
+        width: 100%;
+    }
+
+    .mycard {
+        margin-left: 25px;
+    }
+
+    .block6_content {
+        left: 0%;
+    }
+
+    .hamburger{
+        display: block;
+    }
+    
+    #resp-menu{
+        display: block;
+    }
+}
+/*-----------------------------------------------*/
+
+
+ @media (min-aspect-ratio: 16/9) {
+    .fullscreen-video video {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-video video { 
+        width:auto;
+        height: 100%;
+    }
+}
+
+/*-----------------------------------------------*/
+
+@media (max-width: 767px) {
+    .fullscreen-video video {
+        width:auto;
+        height: 100%;
+    }
+
+    .mycard {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .sz-11 {
+        font-size: 16px;
+    }
+
+    .welcome {
+        font-size: xx-large;
+    }
+
+    .invite_scroll {
+        height: 50px;
+        width: 200px;
+        margin-top: -50px;
+        padding-top: 10px;
+    }
+    
+}
+

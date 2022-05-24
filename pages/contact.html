@@ -9,6 +9,9 @@
         <!-- Stylesheet ********************************************* -->
         <link rel="stylesheet" type="text/css" media="screen" href="../ressources/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="../ressources/css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../ressources/css/animate.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../ressources/css/queries.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
         <!-- favicon  ****************************************************************** -->
         <link rel="apple-touch-icon" sizes="57x57" href="../ressources/images/favicons.ico/apple-icon-57x57.png">
@@ -28,69 +31,235 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="../ressources/images/favicons.ico/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
-        
-        
         <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+
+        <script src="../ressources/js/jquery.min.js"></script>
+        <script>
+            $(window).on('load', function(){
+                $('.preloader').addClass('complete')
+            })
+
+            $(document).ready(function(){
+                $('#panel1').addClass('show');
+                $('#toggle1').slideDown();
+                $('#panel2').addClass('show');
+                $('#toggle2').slideDown();
+    
+            });
+        </script>
 
     </head>
     <body>
 
-        <header>
+            <div class="preloader">
+                <div class="lds-circle"><img src="../ressources/images/logo-nan.png" class="img-fluid img-load"> </div>
+            </div>
+            
 
-        </header>
-
-        <section class="sidebar">
-
-        </section>
 
         <section id="main-content">
-            <div class="container-fluid">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel maximus metus. Sed venenatis, lectus finibus dignissim aliquam, erat dolor consequat est, in malesuada eros massa ut turpis. Proin sit amet facilisis justo. Vivamus non volutpat tortor, in malesuada massa. Vestibulum sit amet lobortis nibh. Praesent id porta dui, eu semper felis. Donec posuere eget diam id efficitur.
+            <div class="contact-page-content" >
 
-                    Donec eget lobortis odio, ut egestas dui. Donec sed diam nibh. Vestibulum placerat, dui et euismod interdum, eros velit consequat risus, et malesuada ipsum neque ac tortor. Nullam eu nulla maximus massa vestibulum egestas ullamcorper sit amet justo. Ut pellentesque cursus feugiat. Phasellus id est eget orci efficitur placerat ac eget metus. Mauris pretium iaculis nibh, dignissim rutrum ante. Nulla malesuada tellus vitae facilisis venenatis. Donec volutpat rhoncus gravida. In vitae arcu non turpis dignissim posuere. Curabitur at convallis libero. Curabitur posuere, enim non pulvinar feugiat, metus diam bibendum nibh, id volutpat dolor turpis vel nisi.
-                    
-                    Donec euismod, massa vitae porta laoreet, nisi diam sollicitudin elit, id mattis risus quam ut ante. Duis lobortis metus in dolor luctus molestie. Nullam vitae vehicula neque, nec porta ipsum. Sed et urna sit amet augue aliquam ultrices at in neque. Sed in convallis libero. Ut venenatis imperdiet urna, a aliquam felis facilisis et. Integer interdum nulla nec iaculis volutpat. Curabitur tincidunt, enim ut mollis lobortis, neque lorem dapibus nisi, a finibus orci felis quis risus. Vivamus sit amet tristique erat. Vestibulum efficitur mauris non rhoncus ultrices. Phasellus vel feugiat nisi. Mauris at tortor placerat, commodo magna porttitor, laoreet elit.
-                    
-                    Maecenas lobortis cursus libero eu maximus. In et congue elit. Phasellus iaculis, lacus eu sagittis venenatis, urna augue pulvinar ante, ut lacinia augue mauris vel massa. Aliquam id aliquet dolor. Etiam bibendum lectus mi, in tristique nisi iaculis in. Cras eget egestas massa. Aliquam hendrerit massa ut efficitur eleifend. Fusce nisl neque, varius eget magna a, luctus congue risus. Sed finibus est ut ante iaculis consequat. Proin molestie tortor at tortor cursus sodales. Vivamus luctus lacus a metus iaculis sagittis. Nullam viverra leo enim, sed auctor nisl auctor eu.
-                    
-                    Sed elementum dictum tellus a cursus. Vestibulum tempus enim condimentum sagittis porttitor. Curabitur malesuada, ipsum eleifend vulputate iaculis, leo risus pulvinar nulla, at euismod velit nulla a nisl. Vivamus ultrices egestas convallis. Nullam molestie enim in quam pharetra pharetra. Sed magna lorem, feugiat quis volutpat vel, suscipit eget diam. Curabitur elementum quam at lacus ultrices molestie. In commodo magna est, in porttitor lorem commodo eget. Duis nec maximus nulla. Nullam semper sit amet felis vitae vestibulum.
-                    
-                    Nulla interdum facilisis tincidunt. Aenean id luctus ante, ut vehicula enim. Pellentesque id enim ac metus volutpat blandit. Pellentesque dictum, diam at viverra commodo, purus erat suscipit quam, at rhoncus nunc lorem vel elit. Nunc volutpat est non orci facilisis cursus. Nullam suscipit tristique erat vitae laoreet. Quisque purus odio, hendrerit eu ligula vitae, pulvinar mattis leo.
-                    
-                    Quisque accumsan porttitor accumsan. Aenean ut dolor ac enim suscipit fringilla. Nam tincidunt nulla risus, ut auctor sem aliquet ac. Aliquam erat volutpat. Donec vitae bibendum diam. Nullam viverra nulla id urna varius mollis. Morbi tincidunt ante in urna posuere laoreet. Sed quam lorem, condimentum vel nisl commodo, aliquet tempor turpis. Praesent tortor sem, bibendum at ultrices in, condimentum a magna. Vestibulum at mattis purus. Duis rutrum vulputate velit. In finibus accumsan orci, non rhoncus magna semper ut.
-                    
-                    Sed massa mauris, tristique in est id, efficitur venenatis ante. Praesent bibendum mi nulla, id porta augue dictum eu. Mauris pretium ante quis vestibulum sodales. Etiam pretium posuere posuere. Morbi sapien urna, luctus in ullamcorper sed, vulputate non nibh. Aenean scelerisque sem erat, vel suscipit nisi accumsan in. Mauris euismod viverra neque non pretium. Fusce molestie tellus vel leo scelerisque fermentum. Curabitur sem dolor, maximus vel metus fringilla, suscipit condimentum risus. Nulla lobortis vel augue at sagittis. Fusce dapibus rutrum turpis sit amet malesuada. Morbi ultrices, metus non cursus condimentum, tellus dui consequat nulla, eget molestie nunc diam quis enim. Aliquam velit velit, sollicitudin in diam at, scelerisque rutrum enim. Vestibulum at mauris eget nulla accumsan volutpat.
-                    
-                    Nam ut arcu tellus. Maecenas sit amet ullamcorper justo, in iaculis ipsum. Donec at velit felis. Fusce lorem lorem, malesuada nec nisl sed, facilisis feugiat quam. Donec ultrices augue sit amet ligula dapibus, nec rutrum ipsum lacinia. Phasellus pellentesque non metus in fringilla. Ut ultricies leo vitae enim luctus, nec faucibus diam tincidunt.
-                    
-                    Pellentesque ac nulla quis est posuere laoreet. Fusce aliquet dui sem, sit amet finibus mauris pharetra nec. Maecenas at ornare risus, sed pretium augue. Donec auctor arcu sit amet ipsum aliquet molestie. Vestibulum ac metus sit amet odio dignissim laoreet. Curabitur malesuada metus vitae elit hendrerit efficitur. Nulla blandit rutrum viverra. Maecenas massa massa, convallis in tempus eu, malesuada nec tellus. Phasellus non nibh id elit malesuada feugiat eget et risus. Donec tincidunt ut elit vel faucibus. Donec viverra interdum nibh id porttitor. Pellentesque in quam augue. Ut dolor ligula, fermentum vitae arcu sed, aliquet accumsan nisl. Nulla lobortis diam felis, a iaculis tortor aliquam sed. Fusce eget dolor nulla. Nullam mattis ipsum a luctus maximus.
-                    
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis lobortis orci sed varius facilisis. Nunc sagittis dui nec fringilla pellentesque. Fusce vitae vulputate sem, quis vulputate dui. Maecenas a leo nec lorem pretium viverra eu sed justo. Vivamus et velit a sem hendrerit congue eget dapibus sapien. Suspendisse eu felis nec justo ullamcorper lobortis sed vel arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    
-                    Maecenas faucibus finibus arcu, nec consectetur arcu pellentesque id. In rhoncus augue eu augue molestie varius. Mauris malesuada posuere sem, quis suscipit velit tincidunt in. Ut sit amet venenatis mauris. Morbi vulputate varius risus, id vehicula magna malesuada at. Ut urna elit, eleifend id feugiat cursus, rhoncus eu nibh. Sed tristique imperdiet tortor, id accumsan dolor bibendum vitae. Vivamus ut massa vitae dui tempus tincidunt et sed diam. Duis non eros fermentum, lacinia eros quis, efficitur ante. Aliquam viverra sem ac orci pretium vehicula. Vestibulum faucibus mauris tortor, at tempor sapien tempor in.
-                    
-                    Fusce blandit, nulla a pulvinar faucibus, dolor libero cursus ex, quis gravida lorem orci eget diam. Donec in dapibus arcu. Etiam id vestibulum neque. Donec blandit, justo eu pulvinar hendrerit, tellus metus aliquet metus, sit amet rutrum nisl massa vel enim. Nullam quis tortor augue. Nunc facilisis massa dolor, vel porttitor felis porttitor ac. Nunc non maximus risus.
-                    
-                    Pellentesque congue neque lacinia, euismod enim et, aliquet quam. Etiam tortor augue, ultrices in quam non, iaculis venenatis dui. Sed sit amet ultricies lacus. Nam rhoncus ligula in sem laoreet faucibus. Morbi imperdiet neque mi, et feugiat libero mollis nec. Aliquam at orci ut est molestie vulputate. Suspendisse tristique, urna et placerat cursus, elit tortor placerat nisl, viverra cursus quam dolor venenatis lorem. Proin eu accumsan ligula. Mauris et feugiat metus. Cras commodo ut orci sit amet scelerisque. Praesent faucibus posuere maximus. Donec vel maximus dolor. Donec fermentum dapibus sagittis. Morbi in erat elementum dui consectetur consequat id eget est. Nulla sagittis magna et ex aliquet, nec interdum ex vestibulum.
-                    
-                    Ut non gravida urna. Nam commodo arcu sed eleifend gravida. Pellentesque laoreet odio ut enim pellentesque, sit amet facilisis magna luctus. Nullam sit amet iaculis lectus, eget faucibus leo. Fusce scelerisque commodo efficitur. Sed rhoncus mollis pellentesque. Maecenas ac ultricies elit. Sed dictum purus ac odio dapibus, sed tincidunt lorem placerat. Nam tempus ante eget diam interdum, et tempor risus ultricies.
-                    
-                    Aenean leo ex, venenatis consequat dictum vel, sagittis nec velit. Sed sollicitudin vitae ex in feugiat. Integer molestie mauris libero, id vestibulum eros iaculis dignissim. Aliquam augue eros, rhoncus ut luctus nec, viverra at lectus. Duis auctor libero vitae odio porta, ac sagittis odio pulvinar. Pellentesque semper nisl sed turpis ullamcorper bibendum. Phasellus lobortis, augue in laoreet mattis, dui nulla maximus tortor, at tempor diam nisl efficitur enim. In interdum venenatis tortor. Integer vehicula pretium nulla eget mollis. Duis sit amet lorem tortor.
-                    
-                    Mauris quis imperdiet ipsum. Aliquam et tortor sapien. Etiam vulputate libero venenatis ante consectetur, sed interdum orci mattis. Cras venenatis, sapien nec pharetra gravida, mauris lectus mattis tellus, at rhoncus tortor metus hendrerit sapien. Maecenas eleifend sapien sed enim feugiat ornare. Cras elit mi, tincidunt id leo ac, porta pellentesque felis. Sed vehicula, magna quis ullamcorper rutrum, nisl arcu vestibulum nunc, vel venenatis lorem metus eget ante. Sed tempus consequat mi. Aenean sit amet mollis lectus, in lobortis quam.
-                    
-                    Donec luctus bibendum rhoncus. Nulla tempus ipsum sed aliquam maximus. Etiam neque nulla, dignissim non ultricies pretium, suscipit at lacus. Integer tincidunt urna non lacinia volutpat. Phasellus imperdiet id orci sed pretium. Suspendisse mollis ullamcorper leo, vitae porta enim placerat gravida. Vivamus eu lacus nulla. Cras hendrerit ornare neque nec lobortis. Morbi semper dolor malesuada, ultricies odio quis, sodales augue. Praesent sed cursus metus. Pellentesque vitae risus leo. Etiam in tristique sem, non vulputate eros. Fusce ut sapien nec augue iaculis posuere. Ut nunc purus, sollicitudin eget augue at, pretium tempus quam.
-                    
-                    Sed in maximus nunc. Nunc aliquam erat vel nibh consectetur, nec luctus sapien porttitor. Nunc aliquam urna in leo blandit hendrerit. Nulla facilisi. In purus justo, malesuada sit amet venenatis ac, dapibus quis est. Proin arcu ex, finibus id metus sed, sagittis porttitor ex. Vivamus ultricies consequat arcu a ultrices. Sed sit amet tincidunt est, eget accumsan purus. In sagittis, ante nec accumsan cursus, tortor magna tempus nibh, vitae elementum erat purus eget ligula. Pellentesque hendrerit porttitor porttitor. Nam faucibus ornare sem quis congue. Suspendisse potenti. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin ligula felis, mattis non purus ac, ultrices facilisis nibh. Donec feugiat enim est, vulputate imperdiet nibh auctor in. Donec placerat sodales urna vitae sagittis.
-                    
-                    Sed ac sollicitudin ipsum. Phasellus in sodales mauris. Cras sodales bibendum quam pellentesque elementum. Aliquam at odio auctor, facilisis est quis, condimentum mi. Donec hendrerit arcu ipsum, ut fringilla sem rhoncus ac. Maecenas faucibus, lectus et faucibus consequat, elit tortor euismod neque, sit amet sagittis lacus tortor eget magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus accumsan venenatis. Quisque imperdiet faucibus erat ac semper. Vestibulum vulputate suscipit suscipit. Morbi sit amet egestas tellus. Donec placerat ornare lectus sit amet rhoncus. Nunc euismod magna nec feugiat porta. In aliquet magna quis dui pulvinar, vitae elementum ex dictum. Nulla facilisi. Nam gravida tempor lectus facilisis ultricies.
+                    <!-- <div class="container">
+                        <div class="card card-shadow" >
+                            <div class="card-body">
+                                <div class="tete">
+                                    <div class="cor"><h1 style="font-family: 'Crete Round', serif; font-size: 3rem">Général</h1></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                <div class="container">
+                    <form action="" method="post" id="commande">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 wow fadeInUp animated" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInRight;">
+                                    <center>
+                                        <h1 class="title"> Services d'intérêt</h1>
+                                        <small class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos fugit, similique possimus molestias iste explicabo nesciunt exercitationem omnis velit doloribus beatae totam doloremque praesentium quidem voluptatibus est temporibus. Quod, aliquam?
+                                        </small>
+                                    </center>
+                                         
+                                         <div class="panel" id="panel1"> <!-- PANEL 1 -->
+                                             <div class="panel-head"><!--panel head -->
+                                                 <div class="panel-head-left">
+                                                     <div class="panel-head-left-icon">
+                                                         <ion-icon class="icon-rep" style="color:#6046b6" name="laptop"></ion-icon>
+                                                     </div>
+                                                     <p class="panel-head-left-title">Site Web?</p>
+                                                 </div>
+                 
+                                                 <div class="panel-head-right">
+                                                     <p class="panel-head-right-details">Plus de détails</p>
+                                                     <div class="panel-head-right-cross" id="icon1">
+                                                         <span></span>
+                                                         <span></span>
+                                                     </div>
+                                                 </div>
+                 
+                                             </div><!--/panel head -->
+                 
+                                             <div class="toggle" id="toggle1">
+                                                 <div class="toggle-content">
+                                                     <div class="toggle-desc">
+                                                         <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" name="wbtype" onclick="myFunction()" class="custom-control-input" id="wbvitrine" value="wbvitrine" >
+                                                                 <label class="custom-control-label" for="wbvitrine">Site Vitrine</label>
+                                                         </div>
+                                                         <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" name="wbtype" onclick="myFunction()" class="custom-control-input" id="wbportail" value="wbportail" >
+                                                                 <label class="custom-control-label" for="wbportail">Site Portail</label>
+                                                         </div>
+                                                         <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" name="wbtype" onclick="myFunction()" class="custom-control-input"id="wbecommerce"  value="wbecommerce">
+                                                                 <label class="custom-control-label" for="wbecommerce">Site E-commerce</label>
+                                                         </div>
+                                                     </div>
+                                                     <img class="toggle-img" src="img/web.svg" alt="">
+                                                 </div>
+                                             </div>
+                 
+                                         </div>
+                 
+                                         <div class="panel" id="panel2"> <!-- PANEL 2 -->
+                                             <div class="panel-head">
+                                                 <div class="panel-head-left">
+                                                     <div class="panel-head-left-icon">
+                                                          <ion-icon class="icon-rep" style="color:#5236b1" name="logo-android"></ion-icon>
+                                                     </div>
+                                                         <p class="panel-head-left-title">Aplication Mobile?</p>
+                                                 </div>
+                 
+                                                 <div class="panel-head-right">
+                                                     <p class="panel-head-right-details">Plus de détails</p>
+                                                     <div class="panel-head-right-cross" id="icon2">
+                                                         <span></span>
+                                                         <span></span>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                 
+                                             <div class="toggle" id="toggle2">
+                                                 <div class="toggle-content">
+                                                     <div class="toggle-desc">
+                                                         <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" name="aptype" onclick="myFunction()"  class="custom-control-input" value="android" id="android">
+                                                                 <label class="custom-control-label" for="android"> Pour Android</label>
+                                                         </div>
+                                                         <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" name="aptype" onclick="myFunction()" class="custom-control-input" value="ios" id="ios">
+                                                                 <label class="custom-control-label" for="ios"> Pour IOS</label>
+                                                         </div>
+                                                         <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" name="aptype" onclick="myFunction()" class="custom-control-input" value="cross" id="cross">
+                                                                 <label class="custom-control-label" for="cross"> Pour CrossPlateform</label>
+                                                         </div>
+                                                     </div>
+                                                         <img class="toggle-img" src="img/apdev.svg" alt="">
+                                                 </div>
+                                             </div>
+                                         </div>
+                 
+                                         <div class="panel" id="panel3"> <!-- PANEL 3 -->
+                                             <div class="panel-head">
+                                                 <div class="panel-head-left">
+                                                     <div class="panel-head-left-icon">
+                                                          <ion-icon class="icon-rep" style="color:#2e0c9c"f name="brush"></ion-icon>
+                                                     </div>
+                                                     <p class="panel-head-left-title">Graphisme</p>
+                                                 </div>
+                 
+                                                 <div class="panel-head-right">
+                                                     <p class="panel-head-right-details">Plus de détails</p>
+                                                     <div class="panel-head-right-cross" id="icon3">
+                                                         <span></span>
+                                                         <span></span>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                 
+                                             <div class="toggle" id="toggle3">
+                                                 <div class="toggle-content">
+                                                     <div class="toggle-desc">
+                                                         <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" name="grtype" onclick="myFunction()"  class="custom-control-input" id="logo" value="logo">
+                                                                 <label class="custom-control-label" for="logo">Logo</label>
+                                                         </div>
+                                                         <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" name="grtype" onclick="myFunction()" class="custom-control-input" id="montage" value="montage">
+                                                                 <label class="custom-control-label" for="montage">Montage image</label>
+                                                         </div>
+                                                         <div class="custom-control custom-checkbox">
+                                                            <input type="checkbox" name="grtype" onclick="myFunction()" class="custom-control-input" id="affiche" value="affiche">
+                                                                 <label class="custom-control-label" for="affiche">Affiche publicitaire</label>
+                                                         </div>
+                                                     </div>
+                                                     <img class="toggle-img" src="img/webdev.svg" alt="">
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         
+                                </div>
+            
+                                <div class="col-md-6">
+                                    
+                                    <section class="part wow fadeInRight animated" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible; animation-duration: 2s; animation-delay: 0.2s; animation-name: fadeInRight;"> <ion-icon id="add" class="icon icon-add" name="add"></ion-icon>
+                                       <center> <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+                                          <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+                                          <!--Les dessins-->
+            
+                                          <circle class="circle-chart__circle" id="a" stroke="#6046b6" stroke-width="2" stroke-dasharray="1,100" stroke-dashoffset="0" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />4
+            
+                                          <circle class="circle-chart__circle" id="b" stroke="#2e0c9c" stroke-width="2" stroke-dasharray="1,100" stroke-dashoffset="5000" stroke-linecap="round" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            
+                                          
+            
+                                          <!--Les dessins-->
+                                          <g class="circle-chart__info">
+                                            <text  class="circle-chart__subline" x="16.91549431"  y="12" alignment-baseline="central" text-anchor="middle" font-size="1">BUDGET!</text>
+                                            <text id="totalsum" class="circle-chart__percent" x="16.91549431" y="17.5"  alignment-baseline="central" text-anchor="middle" font-size="3">Choisissez une offre</text>
+                                          </g>
+                                        </svg></center>
+                                        <ion-icon id="remove" class="icon icon-rmv" name="remove"></ion-icon>
+                                          
+                                      </section>
+            
+                                      
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cor">
+                            <h1 style="font-family: 'Crete Round', serif; font-size: 3rem;color: #6C5CCB">Détails</h1>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12"> 
+                                   
+                                    <center>
+                                       
+                                     </center>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
             </div>
 
-            <footer id="centrer">
-                <p>&copy; NaN Business - Not A Number</p>
-            </footer>
+           
+            
         </section>
-        <script src="../ressources/js/jquery.min.js"></script>
+
+
+        
+        
         <script src="../ressources/js/bootstrap.min.js"></script>
+        <script src="../ressources/js/main.js"></script>
+        <script src="../ressources/js/wow.min.js"></script>
+
     </body>
 </html>
